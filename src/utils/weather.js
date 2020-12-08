@@ -16,7 +16,9 @@ const weather_stat = (data,callback)=>{
         }else{
             callback(undefined,{
                 temp:response.body.current.temperature,
-                feelslike:response.body.current.feelslike
+                feelslike:response.body.current.feelslike,
+                humid:response.body.current.humidity,
+                wind_sp:response.body.current.wind_speed
 
             })
         }
