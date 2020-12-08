@@ -94,8 +94,6 @@ app.get('/weather',(req,res)=>{
             })
 
 
-            console.log(geodata)
-            console.log(data)
         }
         
         
