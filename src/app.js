@@ -9,6 +9,8 @@ const weather_stat=require('./utils/weather')
 
 const app = express()
 
+const port =process.env.PORT || 3000
+
 const public_path= path.join(__dirname,'../public')
 const view_path=path.join(__dirname,'../templates/views')
 const partials_path=path.join(__dirname,'../templates/partials')
@@ -145,7 +147,7 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
 
-    console.log('Server is up and running on port 3000')
+    console.log('Server is up and running on port '+ port)
 })
