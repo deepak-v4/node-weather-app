@@ -3,7 +3,7 @@ const request= require('request')
 
 const weather_stat = (data,callback)=>{
 
-    const url='http://api.weatherstack.com/current?access_key=845e474bed3cd6753b17cccf28c20a98&query='+encodeURIComponent(data.lat)+','+encodeURIComponent(data.lon)
+    const url='http://api.weatherstack.com/current?access_key=[api_token_here]&query='+encodeURIComponent(data.lat)+','+encodeURIComponent(data.lon)
 
     request({url:url,json:true},(error,response)=>{
 
